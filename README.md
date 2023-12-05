@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/tylrtnguyen/">
-    <img alt="Thong Ba Logo" src="./public/logo-light.svg" />
+    <img alt="Thong Ba Logo" src="./app/assets/TB_Logo.png" widtd="150" height="150" />
   </a>
 </p>
 
