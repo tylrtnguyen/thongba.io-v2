@@ -8,7 +8,7 @@ export default function Home() {
       <header>
         <nav className="px-4 lg:px-6 py-2.5">
           <div className="flex flex-wrap mx-auto max-w-screen-xl">
-            <Link className="items-center " href="/">
+            <Link className="items-center" href="/">
               <Image
                 src={LogoLight}
                 width="130"
@@ -16,10 +16,10 @@ export default function Home() {
                 alt="Thong Ba Logo Light"
               />
             </Link>
-            <div className="flex space-x-5 justify-items-end items-center pl-2">
+            <div className="flex grow space-x-2 lg:space-x-5 justify-end items-center pl-1 lg:pl-3">
               <a
                 href="mailto:hello@thongba.io"
-                className="inline-flex gap-2 text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 bg-gray-700 font-medium rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 dark:hover:bg-gray-900 focus:outline-none dark:focus:ring-gray-800"
+                className="inline-flex gap-2 text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 bg-gray-700 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:hover:bg-gray-900 focus:outline-none dark:focus:ring-gray-800"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-5 h-5 pt-1"
+                  className="w-5 h-5"
                 >
                   <path
                     strokeLinecap="round"
@@ -37,15 +37,14 @@ export default function Home() {
                 </svg>
                 Email me
               </a>
-
               <a
                 href="https://www.linkedin.com/in/tylrtnguyen/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex gap-2 text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 bg-gray-700 font-medium rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-900 focus:outline-none dark:focus:ring-gray-800"
+                className="inline-flex gap-2 text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 bg-gray-700 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-900 focus:outline-none dark:focus:ring-gray-800"
               >
                 <svg
-                  className="w-5 h-5 pt-1"
+                  className="w-5 h-5"
                   viewBox="0 0 1200 1200"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -60,7 +59,7 @@ export default function Home() {
                 href="https://www.github.com/tylrtnguyen"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex gap-2 text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 bg-gray-700 font-medium rounded-lg text-md px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-900 focus:outline-none dark:focus:ring-gray-800"
+                className="inline-flex gap-2 text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 bg-gray-700 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-900 focus:outline-none dark:focus:ring-gray-800"
               >
                 <svg
                   className="w-5 h-5"
@@ -96,26 +95,23 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <main className="flex flex-col justify-center items-center pt-20">
-          <div className="bg-[url('./assets/website-builder.svg')] bg-contain bg-no-repeat w-72 h-72 md:w-96 md:h-96 lg:w-128 lg:h-128"></div>
-          <h1 className="text-2xl text-center text-white font-bold pb-2 lg:pb-5 lg:text-4xl">
-            Oops! site is under maintenance.
-          </h1>
-          <p className="text-center text-white w-full p-5 xl:w-1/2 3xl:w-1/3">
-            Hi! Thank you very much for visiting my personal website. I’m
-            currently working to upgrade the site bringing it a new design and
-            up-to-date work experience data. Please don’t hesitate to reach out
-            to me at{" "}
-            <a
-              className="underline text-blue-400"
-              href="mailto:hello@thongba.io"
-            >
-              hello@thongba.io
-            </a>{" "}
-            if needed.
-          </p>
-        </main>
       </header>
+      <main className="flex flex-col justify-center items-center pt-20">
+        <div className="bg-[url('./assets/website-builder.svg')] bg-contain bg-no-repeat w-72 h-72 md:w-96 md:h-96 lg:w-128 lg:h-128"></div>
+        <h1 className="text-2xl text-center text-white font-bold pb-2 lg:pb-5 lg:text-4xl">
+          Oops! site is under maintenance.
+        </h1>
+        <p className="text-center text-white w-full p-5 xl:w-1/2 3xl:w-1/3">
+          Hi! Thank you very much for visiting my personal website. I’m
+          currently working to upgrade the site bringing it a new design and
+          up-to-date work experience data. Please don’t hesitate to reach out to
+          me at{" "}
+          <a className="underline text-blue-400" href="mailto:hello@thongba.io">
+            hello@thongba.io
+          </a>{" "}
+          if needed.
+        </p>
+      </main>
     </div>
   );
 }

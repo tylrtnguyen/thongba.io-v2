@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Poppins } from "next/font/google";
 
 import "./globals.css";
@@ -22,6 +23,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={poppins.className}>{children}</body>
+      <Script
+        async
+        src="https://umami-tylrtnguyen.vercel.app/script.js"
+        data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBID || ""}
+      />
     </html>
   );
 }
